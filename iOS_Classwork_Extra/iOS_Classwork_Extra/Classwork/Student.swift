@@ -16,7 +16,23 @@ import Foundation
 /// 3. gender: String
 
 //struct ...
-
+struct Student {
+    var name:String
+    var track:String
+    var gendr:String
+    func imageName() -> String {
+        if gendr == "boy" {
+            return "boyProfileImage"
+        }
+        else if gendr == "girl" {
+            return "girlProfileImage"
+            
+        }
+        else {
+            return ""
+        }
+    }
+}
 
 
 
@@ -50,12 +66,12 @@ import Foundation
 
 // كتبنالك ياها عشان لا تقول (مووعاريف أكتب مصفوففة وااااع 😭)
 // امسح الكود واكتبه بطريقتك المبدعة 😍
-//var students: [Student] =
-//    [
-//        Student(...
-//        Student(...
-//        Student(...
-//    ]
+var students: [Student] =
+    [
+        Student(name: "ريم خالد", track: "iOS", gendr: "girl"),
+        Student(name: "صالح شهاب", track: "web", gendr: "boy"),
+        Student(name: "محمد علي", track: "Android", gendr: "boy")
+    ]
 
 
 
